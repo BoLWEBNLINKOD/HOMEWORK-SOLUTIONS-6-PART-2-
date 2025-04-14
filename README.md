@@ -15,4 +15,8 @@ Thermostat
 [Thermostat] Setting temperature to 22°C.
 Метод revertTemperature() возвращает предыдущее значение и выводит сообщение с предыдущей температурой.
 
-
+TurnOnLightCommand
+Это конкретная команда для лампы. В методе execute() она вызывает turnOn() на объекте Light. В undo() — turnOff(). Например, при нажатии на кнопку команда включит свет и выведет:
+[Light] Turning ON.
+А если нажать "undo" — свет выключится и будет выведено:
+[Light] Turning OFF.
