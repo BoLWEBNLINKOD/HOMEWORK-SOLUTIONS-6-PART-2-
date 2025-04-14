@@ -34,3 +34,9 @@ SmartHomeRemoteControl
 Это "Invoker" — пульт управления умным домом. Здесь хранятся назначенные команды в Map<String, Command> и история выполненных команд в Stack для поддержки undo.
 Метод pressButton() выполняет команду по имени слота и запоминает её в истории.
 Метод undoButton() берёт последнюю команду из истории и вызывает у неё undo().
+К примеру что выведет код: 
+[Light] Turning ON
+[Thermostat] Setting temperature to 22°C
+[Remote] Undoing last command...
+[Thermostat] Reverting to previous temperature: 20°C
+
