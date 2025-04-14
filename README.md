@@ -20,3 +20,9 @@ TurnOnLightCommand
 [Light] Turning ON.
 А если нажать "undo" — свет выключится и будет выведено:
 [Light] Turning OFF.
+
+SetThermostatCommand
+Это команда для установки температуры у термостата. В конструктор передаётся нужное значение температуры и объект Thermostat. В execute() термостату присваивается новое значение и выводится:
+[Thermostat] Setting temperature to XX°C.
+В undo() температура возвращается к предыдущему значению с сообщением:
+[Thermostat] Reverting to previous temperature: XX°C.
