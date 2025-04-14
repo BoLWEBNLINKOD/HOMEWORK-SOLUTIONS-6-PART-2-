@@ -40,3 +40,17 @@ SmartHomeRemoteControl
 [Remote] Undoing last command...
 [Thermostat] Reverting to previous temperature: 20°C
 
+Main
+Это главный класс программы. Здесь создаются устройства (Light, Thermostat), команды для них, пульт, а затем команды назначаются на кнопки. 
+В примере вывод будет:
+[Light] Turning ON
+[Thermostat] Setting temperature to 22°C
+[Remote] Undoing last command...
+[Thermostat] Reverting to previous temperature: 20°C
+[Light] Turning ON
+[Thermostat] Setting temperature to 18°C
+[Remote] Undoing last command...
+[Thermostat] Reverting to previous temperature: 22°C
+[Light] Turning OFF
+
+Все это и остальные классы показывают как наглядно работают классы и коды дополняя друг друга
